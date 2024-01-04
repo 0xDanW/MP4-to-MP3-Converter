@@ -34,16 +34,16 @@ def upload():
 
     if access["admin"]:
         if len(request.files) > 1 or len(request.files) < 1:
-            return "Exactly 1 file required, 404"
+            return "Exactly 1 file required", 400
 
         for _, f in request.files.items():
             err = util.upload(f, fs, channel, access)
 
             if err:
                 return err
-        return "[+] Success!", 200
+        return "[+] Upload Successful!", 200
     else:
-        return "Not authorized", 401
+        return "[!] Not Authorized!", 401
 
 
 @server.route("/download", methods=["GET"])

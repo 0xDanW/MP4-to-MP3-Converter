@@ -1,6 +1,6 @@
 # MP4-to-MP3 Converter
 
-A Python-based event-driven microservice architecture demo that allows clients to convert their MP4 file into MP3 file. Tech stack used for this project is Python, Kubernetes, Docker, AWS, RabbitMQ, MongoDB.
+A Python-based event-driven microservice architecture demo that allows clients to convert their MP4 file into MP3 file. Tech stack used for this project is Python, Kubernetes, Docker, AWS, RabbitMQ, MongoDB (GridFS).
 
 ## Steps
 

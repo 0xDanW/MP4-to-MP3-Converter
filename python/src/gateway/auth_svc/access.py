@@ -4,7 +4,7 @@ import os, requests
 def login(request):
     auth = request.authorization
     if not auth:
-        return None, ("[!] Missing credntials!", 401)
+        return None, ("[!] Missing credentials!", 401)
 
     basicAuth = (auth.username, auth.password)
     response = requests.post(
