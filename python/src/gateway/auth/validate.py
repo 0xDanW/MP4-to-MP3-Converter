@@ -16,6 +16,6 @@ def token(request):
     )
 
     if response.status_code == 200:
-        return response.txt, None
+        return response.text, None
     else:
-        return response.txt, (response.txt, response.status_code)
+        return response.text, (response.txt, response.status_code)
