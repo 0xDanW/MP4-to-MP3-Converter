@@ -13,3 +13,5 @@ A Python-based event-driven microservice architecture demo that allows clients t
 5. The MP3 files are then stored back onto MongoDB, and a new message is created in the queue.
 6. Notification service consumes the conversion confirmation message and relays an email back to the client.
 7. Client use the ID of the email message with personal JWTs to make an authenticated HTTP request to download the MP3 file from MongoDB.
+
+## Prerequisites
